@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Style the header */
+
+.header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.header h2 {
+    margin-bottom: 10px;
+}
+
+
+/* Clear floats after the header */
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section {
+    background-color: rgb(6, 37, 71);
+    min-height: 100vh;
+}
+
+.content input {
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    outline: none;
+    background: none;
+    border: none;
+    appearance: none;
+}
+
+
+/* notification style */
+
+.count i {
+    font-size: 1.5rem;
+    position: absolute;
+    top: -27px;
+    right: -13px;
+    height: 30px;
+    width: 20px;
+    color: white;
+    font-weight: 300;
+}
+
+.header .count {
+    position: relative;
+}
+
+.header .count .taskCount {
+    position: absolute;
+    top: -40px;
+    right: -7px;
+    background: black;
+    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    /* padding: 5px; */
+}
+
+
+/* Style the input */
+
+input {
+    margin: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    height: 45px;
+    border-radius: 8px 0px 0px 8px;
+    outline: none;
+    border: none;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 1rem;
+    margin-left: 10%;
+}
+
+
+/* STYLE FOR TASKS */
+
+.tasks {
+    width: 80%;
+    margin: auto;
+}
+
+.task {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    padding: 16px;
+    color: rgb(35, 35, 41);
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.task:hover {
+    box-shadow: 0 0 3px pink;
+}
+
+
+/* delete and check icon */
+
+.action i {
+    color: gray;
+    position: relative;
+    right: 2px;
+    margin: 5px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.action i:hover {
+    cursor: pointer;
+    margin: 0px 5px;
+    color: black;
+}
+
+
+/* Style the "Add" button */
+
+.addbtn {
+    padding: 10px;
+    width: 25%;
+    height: 45px;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    /* transition: 0.3s; */
+    border-radius: 0px 8px 8px 0px;
+}
+
+.addbtn:hover {
+    background-color: #bbb;
+}
