@@ -47,11 +47,14 @@ function addTask() {
     //Check Task
     checkIcon.className = "fa fa-check-square";
     checkIcon.addEventListener("click", function() {
+        // when clicked to check
         if (checkbtn == "gray") {
             checkIcon.style.color = "limegreen";
             divChild1.style.textDecoration = "line-through";
             checkbtn = "green";
-        } else {
+        }
+        // when clicked to uncheck
+        else {
             checkIcon.style.color = "gray";
             divChild1.style.textDecoration = "none";
             checkbtn = "gray";
