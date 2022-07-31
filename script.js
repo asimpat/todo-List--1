@@ -6,6 +6,7 @@ let taskCount = document.querySelector("#taskCount");
 let tasks = document.querySelector(".tasks");
 
 let count = 0;
+let checkbtn = "gray";
 //For Enter Key
 input.addEventListener("keydown", function(e) {
     if (e.key === "Enter") {
@@ -46,8 +47,15 @@ function addTask() {
     //Check Task
     checkIcon.className = "fa fa-check-square";
     checkIcon.addEventListener("click", function() {
-        checkIcon.style.color = "limegreen";
-        divChild1.style.textDecoration = "line-through";
+        if (checkbtn == "gray") {
+            checkIcon.style.color = "limegreen";
+            divChild1.style.textDecoration = "line-through";
+            checkbtn = "green";
+        } else {
+            checkIcon.style.color = "gray";
+            divChild1.style.textDecoration = "none";
+            checkbtn = "gray";
+        }
     });
     divChild2.appendChild(checkIcon);
 
